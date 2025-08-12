@@ -7,6 +7,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url("logo-image/1755000853296.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    
+
 }
 .navigation-bar {
     position: sticky;
@@ -16,15 +24,19 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    padding-inline: 200px;
+    padding-inline: 150px;
+    z-index: 3;
+
 }
 .logo img{
     height: 40px; 
+
 }
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 45px;
+    margin: 0;
    
 }
 li a{
@@ -32,22 +44,25 @@ li a{
       color: #1E3A8A;
         font-weight: bold;
         position: relative;
+
   
 }
 a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px; 
+  bottom: -10px; 
   width: 0%;
-  height: 2px;
+  height: 3px;
   background-color: #1E3A8A;
   transition: width 0.3s ease; 
+    border-radius: 5px;
 }
 
 a:hover::after {
   width: 100%;
  color: #2563EB;
+    transition: width 0.3s ease;
 }
 
 .nav-btn {
@@ -58,14 +73,95 @@ a:hover::after {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 .nav-btn:hover {
     font-weight: bold;
     background-color:white;
     color: #1E3A8A;
     border: 1.4px solid #1E3A8A;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+
 }
 .nav-btn a {
     color: inherit;
     text-decoration: none;
+
 }
+.overlay{
+    position:fixed;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    background-color: #1e3b8ab8;
+    z-index: 2;
+    top: 0;
+    display: flex;
+}
+.biggest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px; 
+    color: white;
+    position:fixed;
+    z-index: 3;
+    text-align: center;
+    padding: 5px;
+
+}
+.footer{
+    color: white;
+    position: fixed;
+    background-color: black;
+    height: 35px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 3;
+}
+h1{
+    font-size: 4rem;
+}
+.highlight{
+    color: #82e9ef;
+}
+.hero-btn{
+    background-color:#82e9ef ;
+    border: none;
+    color: #1E3A8A;
+    padding-block: 10px;
+    padding-inline: 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+.hero-btn:hover{
+    background-color: transparent;
+    color: #82e9ef;
+    border: 1px solid #82e9ef;
+}
+.features{
+    background-color: #82e9efa1;
+    color: #1E3A8A;
+    border: 1px solid #1E3A8A;
+    height: 100vh;
+    text-align: start;
+    border-radius: 8px;
+    padding: 5px;
+    padding-top: 20px;
+    width: 50%;
+}
+.features h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+.features p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
