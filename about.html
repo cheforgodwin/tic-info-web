@@ -20,6 +20,11 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <button class="nav-btn">Join Us</button>
+        <div class="nav-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>           
+        </div>
    </nav>
 
    <div class="content">
@@ -61,6 +66,15 @@
                     <h3>Our Team</h3>
                     <p>Meet the passionate individuals behind TIC Foundation.</p>
                 </div>
+                <script>
+
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navLinks = document.querySelector('.nav-links'); 
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');    
+        hamburger.classList.toggle('open');
+    }); 
+                </script>
 
             </div>
          </div>

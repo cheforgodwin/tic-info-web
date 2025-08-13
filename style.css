@@ -18,6 +18,7 @@ body {
 }
 .navigation-bar {
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: white;
     padding: 10px;
@@ -26,11 +27,12 @@ body {
     justify-content: space-between;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     padding-inline: 150px;
-    z-index: 3;
+    z-index: 8;
 
 }
 .logo img{
     height: 40px; 
+    margin-right: 18px;
 
 }
 .nav-links {
@@ -65,12 +67,17 @@ a:hover::after {
  color: #2563EB;
     transition: width 0.3s ease;
 }
+.footer{
+    background-color: white;
+    height: 400px;
+}
 
 .nav-btn {
     background-color: #1E3A8A;
     color: white;
     padding: 10px 20px;
     border: none;
+    margin-left: 8px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
@@ -105,17 +112,17 @@ a:hover::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 70px; 
+  
     color: white;
-    position:fixed;
+    
     z-index: 3;
     text-align: center;
     padding: 5px;
 
 }
-.footer{
+footer{
     color: white;
-    position: fixed;
+   
     background-color: black;
     height: 35px;
     bottom: 0px;
@@ -155,6 +162,7 @@ h1{
     padding: 5px;
     padding-top: 20px;
     width: 50%;
+    z-index: 7;
 }
 .features h2{
     font-size: 2rem;
@@ -165,5 +173,53 @@ h1{
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+.nav-hamburger {
+   display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1E3A8A;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+.hero-section{
+    z-index: 7;
+}
+@media (max-width: 768px) {
+    .navigation-bar {
+        padding-inline: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+    .nav-btn {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-hamburger {
+        display: flex;
+    }
+    .biggest{
+        display: flex;
+        flex-direction: column;
+    }
+    .features{
+        width: 100%;
+        margin-top: 100px;
+    }
+    
 }
 
