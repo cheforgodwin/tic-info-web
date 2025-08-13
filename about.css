@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.about-sections {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color:#1E3A8A ;
+    align-items: center;
+    justify-content: center;
+}
+.vision,
+.approach,
+.get-involved,
+.our-team,
+.values {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 1rem;
+}
+.our-team {
+    /* background-color: #f9f9f9; */
+    background-color: green;
+}
+.approach {
+    background-color: #f1f1f1;
+}
+.get-involved {
+    background-color: #f2f2f2;
+}
+.vision {
+    background-color: #f3f3f3;
+}
+.values {
+    background-color: #f4f4f4;
+}
+h1,p{
+    color: #fff;
+    font-weight: bold;
+}
