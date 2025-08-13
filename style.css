@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.home-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -158,10 +158,14 @@ footer a{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-   color: #82e9ef;
+   color: #44d6c3;
    font-size:x-large;
    padding-inline: 15%;
    
+}
+.what{
+    text-decoration: none;
+    color: white;
 }
 li {
     list-style: none;
