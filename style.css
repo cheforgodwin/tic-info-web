@@ -120,16 +120,15 @@ a:hover::after {
 }
 
 .biggest {
-    margin-top: 4rem;
+    margin-top: 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     color: white;
-
     z-index: 3;
     text-align: center;
     padding: 5px;
+    
 
 }
 
@@ -165,7 +164,7 @@ footer a{
     width: 100%;
    color: #44d6c3;
    font-size:x-large;
-   padding-inline: 15%;
+   padding-inline: 35%;
    
 }
 .what{
