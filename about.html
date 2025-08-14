@@ -1,11 +1,165 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TIC Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+        <div class="logo">
+            <img src="logo-image/TIC Logo_Horizontal_Blue.png" alt="TIC Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-btn">Join Us</button>
+        <div class="nav-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div>
+        <h1>About Us</h1>
+        <p>Welcome to the About Us page of the TIC Foundation. Here you can learn more about our mission, vision, and
+            the impact we are making in the tech community.</p>
+    </div>
+    <!-- Main Grid Content -->
+    <div class="grid-container">
+
+        <div class="block">
+            <h2>About TiC</h2>
+            <ul>
+                <li>Founded in 2020 to foster tech innovation in Africa.</li>
+                <li>Mission: Empower young innovators with skills, mentorship, and resources.</li>
+                <li>Milestones: First hackathon in 2023.</li>
+                <li>Founder: Bill Agha</li>
+            </ul>
+            <a href="https://youtu.be/VEAg-WZzM-A" class="btn watch-demo" target="_blank">Watch Video</a>
+        </div>
+
+        <div class="block">
+            <h2>Programs Overview</h2>
+            <ul>
+                <li><b>Hackathons:</b> Annual competitions for devs, designers, entrepreneurs.</li>
+                <li><b>Youth Labs:</b> STEM training sessions for students.</li>
+                <li><b>Mentorship:</b> One-on-one guidance from professionals.</li>
+                <li><b>Internships:</b> Hands-on sessions on various tech topics (e.g., web development, data
+                    science,cyber security).</li>
+                <li>Includes infographics and icons for easy understanding.</li>
+            </ul>
+            <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" class="btn watch-demo" target="_blank">Watch Video</a>
+        </div>
+
+        <div class="block">
+            <h2>Success Stories</h2>
+            <ul>
+                <li>300+ alumni have launched successful startups.</li>
+                <li>Manfred Asah Agha, a young Cameroonian innovator, created the Intelligent Eye Glass for the Blind to
+                    aid visually impaired individuals.
+                    In 2025, he won the Special Prize of the President of the Republic with a 10 million FCFA award.
+                    He plans to use the funds to develop 20 prototypes to help over 6,000 people in Cameroon..</li>
+            </ul>
+            <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" class="btn watch-demo" target="_blank">Watch Video</a>
+        </div>
+
+        <div class="block">
+            <h2>Blog Section</h2>
+            <ul>
+                <li>Articles on tech trends, TiC event recaps, community updates.</li>
+                <li>Content categorized by topic or date.</li>
+                <li>“Read more” modals for details without leaving page.</li>
+            </ul>
+            <a href="https://www.youtube.com/watch?v=V-_O7nl0Ii0" class="btn watch-demo" target="_blank">Watch Video</a>
+        </div>
+
+        <div class="block">
+            <h2>Event Calendar</h2>
+            <ul>
+                <li>Monthly calendar and list view of events.</li>
+                <li>Click for detailed info, speakers, registration.</li>
+                <li>Includes hackathons, workshops, meetups.</li>
+            </ul>
+            <a href="https://www.youtube.com/watch?v=2Vv-BfVoq4g" class="btn watch-demo" target="_blank">Watch Video</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column-one">
+                <h3>TIC Programs</h3>
+                <ul>
+                    <li><a href="#">TIC Summit</a></li>
+                    <li><a href="#">TIC Hackathon</a></li>
+                    <li><a href="#">TIC Bootcamp</a></li>
+                    <li><a href="#">TIC Startup Accelerator</a></li>
+                    <li><a href="#">Event Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-two">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Past Projects</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-three">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><a href="#">We will put it later</a></li>
+                    <li><a href="#">Polytechnic-Yaounde</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img src="logo-image/TIC Logo_Horizontal_Cyan.png" alt="TIC Logo Cyan"
+                style="height:50px;margin-bottom:10px;">
+        </div>
+        <div class="whole-line">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.nav-hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            hamburger.classList.toggle('open');
+        });
+
+        // Detect when a video tab closes and refresh the page
+        document.querySelectorAll('.watch-demo').forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(() => {
+                    location.reload();
+                }, 60000); // Reload after 60s (approx video length)
+            });
+        });
+    </script>
+
 </body>
+
 </html>
