@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic info</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="join_us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
-
 </head>
-
-<body class="home-body">
-
-    <nav class="navigation-bar">
+<body>
+      <nav class="navigation-bar">
         <div class="logo">
             <img src="logo-image/TIC Logo_Horizontal_Blue.png" alt="">
         </div>
@@ -33,48 +28,37 @@
 
     </nav>
 
-    <div class="biggest">
-        <div class="hero-section">
-            <h1>Tech <span class="highlight">Innovation </span>Center </h1>
-            <p>Leveraging Technology And Entrepreneurship To Solve Local Problems</p>
-            <button class="hero-btn">Learn More</button>
+    <div class="body">
+        
+    <form action="summit">
+        <div class="form-container">
+            <h2>Join Us</h2>
+           
+           <br>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+            <br>
+
+            <input type="email" id="email" name="email" placeholder="Enter Your E-mail" required>
+
+            <br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phonr Number">
+
+            <br>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </div>
+        <div class="form-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+             <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
         </div>
 
-        <section class="features">
-            <h2>Our Features</h2><br>
-            <div class="feature-cards">
-                <div class="card">
-                    <h3>Tech Innovation challenge</h3>
-                    <p>This program is for students and spans from february to april </p><br>
-                </div>
-                <div class="card">
-                    <h3>Training,Mentorship & prototype exposure</h3>
-                    <p>The selected finalists are invited and receive soft skilled training, mentorship and visit tech
-                        hubs </p><br>
-                </div>
-                <div class="none">
-                    <div class="card">
-                        <h3>Comprehensive tech and enterepreneurial skill-building</h3>
-                        <p>TIC spans hands-on training in 3D printing,graphic design, pitching skills and mobile and web
-                            development </p><br>
-                    </div>
-                    <div class="card">
-                        <h3>Participants rewards and post-event support</h3>
-                        <p>Winners are granted certificates and cash prices just as in 2021 edition (100 000FCFA-for
-                            first place , 75 000FCFA for second etc.)</p>
-                    </div>
-                </div>
 
-            </div>
-
-        </section>
-        <div class="bigger">
-            <div class="overlay"></div>
-
-        </div>
-
+    </form>
     </div>
-    <footer>
+     <footer>
         <div class="footer-columns">
             <div class="footer-column-one">
                 <h3>Tic Programs</h3>
@@ -114,25 +98,7 @@
         </div>
 
     </footer>
-    <script>
-        const hamburger = document.querySelector('.nav-hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const navLinksContainer = document.querySelector('.navigation-bar');
-        navLinksContainer.addEventListener('click', (e) => {
-            if (e.target.tagName === 'A') {
-                navLinks.classList.remove('nav-active');
-                hamburger.classList.remove('open');
-            }
-        });
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-            hamburger.classList.toggle('open');
-        });
-
-    </script>
-
-
+    
 </body>
-
 </html>
