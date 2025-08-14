@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIC Services</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="service.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navigation-bar">
+    <div class="logo">
+        <img src="logo-image/TIC Logo_Horizontal_Blue.png" alt="TIC Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-btn">Join Us</button>
+    <div class="nav-hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<header class="page-header">
+    <h1>Our Services</h1>
+    <p>Explore the range of programs offered by TIC Foundation to empower innovators.</p>
+</header>
+
+<!-- Services Grid -->
+<div class="grid-container">
+    <div class="block">
+        <h2>Hackathons</h2>
+        <p>Annual competitions bringing together developers, designers, and entrepreneurs to innovate.</p>
+        <a href="#" class="read-more-btn">Read More</a>
+        <a href="join_us.html" class="read-more-btn">Join Us</a>
+    </div>
+    <div class="block">
+        <h2>Internships</h2>
+        <p>Hands-on sessions across tech fields like AI, Web Development, Data Science, and Cybersecurity.</p>
+        <a href="#" class="read-more-btn">Read More</a>
+        <a href="join_us.html" class="read-more-btn">Join Us</a>
+    </div>
+    <div class="block">
+        <h2>AI Startups</h2>
+        <p>Support for AI-powered startups with mentorship, resources, and networking opportunities.</p>
+        <a href="#" class="read-more-btn">Read More</a>
+        <a href="join_us.html" class="read-more-btn">Join Us</a>
+    </div>
+    <div class="block">
+        <h2>Bootcamps</h2>
+        <p>Intensive skill-building programs designed for students and professionals in tech.</p>
+        <a href="#" class="read-more-btn">Read More</a>
+        <a href="join_us.html" class="read-more-btn">Join Us</a>
+    </div>
+    <div class="block">
+        <h2>Mentorship</h2>
+        <p>One-on-one guidance from industry experts to help innovators succeed in their projects.</p>
+        <a href="#" class="read-more-btn">Read More</a>
+        <a href="join_us.html" class="read-more-btn">Join Us</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 TIC Foundation. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navLinks = document.querySelector('.nav-links'); 
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');    
+        hamburger.classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>
