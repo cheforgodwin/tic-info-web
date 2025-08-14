@@ -24,8 +24,9 @@
             <li><a href="service.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="story.html">Achievements</a></li>
+             <button class="nav-btn "><a class="what" href="join_us.html">Join Us</a></button>
         </ul>
-        <button class="nav-btn"><a class="what" href="join_us.html">Join Us</a></button>
+       
         <div class="nav-hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -115,24 +116,7 @@
         </div>
       <div style="margin-top: 20px;">   <p>&copy; 2025 TIC Foundation. All Rights Reserved.</p></div>
     </footer>
-    
-    <script>
-        const hamburger = document.querySelector('.nav-hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const navLinksContainer = document.querySelector('.navigation-bar');
-        navLinksContainer.addEventListener('click', (e) => {
-            if (e.target.tagName === 'A') {
-                navLinks.classList.remove('nav-active');
-                hamburger.classList.remove('open');
-            }
-        });
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-            hamburger.classList.toggle('open');
-        });
-
-    </script>
+    <script src="res-nav.js"></script>
 
 
 </body>
