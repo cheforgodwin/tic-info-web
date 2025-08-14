@@ -38,10 +38,11 @@
     margin-right: 18px;
 
 }
-bod{
-   
+
+bod {
+
     font-family: Arial, sans-serif;
-   
+
 }
 
 .nav-links {
@@ -128,14 +129,14 @@ a:hover::after {
     z-index: 3;
     text-align: center;
     padding: 5px;
-    
+
 
 }
 
 footer {
     position: relative;
     color: white;
-     background-color: rgb(25, 26, 29);
+    background-color: rgb(25, 26, 29);
     height: fit-content;
     bottom: 0px;
     width: 100%;
@@ -146,31 +147,36 @@ footer {
     flex-direction: column;
 
 }
-.footer-columns{
+
+.footer-columns {
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: 20px;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: #82e9ef;
 
 }
-.whole-line{
+
+.whole-line {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-   color: #44d6c3;
-   font-size:x-large;
-   padding-inline: 35%;
-   
+    color: #44d6c3;
+    font-size: x-large;
+    padding-inline: 35%;
+
 }
-.what{
+
+.what {
     text-decoration: none;
     color: white;
 }
+
 li {
     list-style: none;
     margin-bottom: 10px;
@@ -194,8 +200,10 @@ h1 {
     border-radius: 5px;
     font-weight: bold;
     margin-top: 40px;
-     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border}
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border
+}
+
 .form-icons a {
     color: #1E3A8A;
 }
@@ -314,20 +322,25 @@ h1 {
         background-color: white;
         padding: 10px 0;
     }
+
     .nav-links.active {
         display: flex;
     }
+
     .nav-btn {
         display: none;
     }
+
     .nav-btn.active {
         display: block;
         width: 100%;
         text-align: center;
     }
+
     .nav-hamburger {
         display: flex;
     }
+
     .biggest {
         flex-direction: column;
     }
@@ -338,11 +351,13 @@ h1 {
         padding: 15px;
         font-size: 0.9rem;
     }
+
     .footer-columns {
         flex-direction: column;
         align-items: center;
     }
 }
+
 /* kk */
 /* MOBILE MENU TOGGLE */
 .nav-links {
@@ -374,7 +389,8 @@ h1 {
 
     /* Visible when active */
     .nav-links.nav-active {
-        max-height: 500px; /* large enough to fit all links */
+        max-height: 500px;
+        /* large enough to fit all links */
         padding: 10px 0;
     }
 }
@@ -383,9 +399,11 @@ h1 {
 .nav-hamburger.open .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
+
 .nav-hamburger.open .bar:nth-child(2) {
     opacity: 0;
 }
+
 .nav-hamburger.open .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
