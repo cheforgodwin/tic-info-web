@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TiC Website Sections</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #1e3c72;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .block {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .block:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 15px;
+        background: #1e88e5;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+        background: #1565c0;
+    }
+</style>
+</head>
+<body>
+
+<h1>TiC Website Sections</h1>
+
+<div class="grid-container">
+
+    <!-- About TiC -->
+    <div class="block">
+        <h2>About TiC</h2>
+        <ul>
+            <li>TiC (Tech Innovation Center) was founded in 2015 to foster technological innovation and entrepreneurship in Africa.</li>
+            <li>Our mission is to empower young innovators with the skills, mentorship, and resources they need to succeed.</li>
+            <li>Major milestones include launching our first hackathon in 2022 and opening regional hubs in 2020.</li>
+            <li>Founders: Bill Agha </li>
+        </ul>
+        <a href="https://youtu.be/VEAg-WZzM-A" class="btn" target="_blank">Watch Video</a>
+    </div>
+
+    <!-- Programs Overview -->
+    <div class="block">
+        <h2>Programs Overview</h2>
+        <ul>
+            <li><b>Hackathons:</b> Annual competitions bringing together developers, designers, and entrepreneurs.</li>
+            <li><b>Youth Labs:</b> Training sessions for students in STEM fields.</li>
+            <li><b>Mentorship Program:</b> One-on-one guidance from industry professionals.</li>
+            <li>Programs are visually supported with infographics and icons for easy understanding.</li>
+        </ul>
+        <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" class="btn" target="_blank">Watch Video</a>
+    </div>
+
+    <!-- Success Stories -->
+    <div class="block">
+        <h2>Success Stories</h2>
+        <ul>
+            <li>Over 300 TiC Summit alumni have launched successful startups in various industries.</li>
+            <li>Featured: Jane Doe, who built an AI-powered agriculture platform after joining TiC.</li>
+            <li>Stories include achievements, photos, and videos of participants’ journeys.</li>
+            <li>Filter by year or program for easy browsing.</li>
+        </ul>
+        <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" class="btn" target="_blank">Watch Video</a>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="block">
+        <h2>Blog Section</h2>
+        <ul>
+            <li>Features articles on technology trends, TiC event recaps, and community updates.</li>
+            <li>Content is categorized by topic or event date for easy navigation.</li>
+            <li>“Read more” modals allow users to expand and explore details without leaving the page.</li>
+        </ul>
+        <a href="https://www.youtube.com/watch?v=V-_O7nl0Ii0" class="btn" target="_blank">Watch Video</a>
+    </div>
+
+    <!-- Event Calendar -->
+    <div class="block">
+        <h2>Event Calendar</h2>
+        <ul>
+            <li>Lists upcoming TiC events in a monthly calendar view and list format.</li>
+            <li>Click on any event to see detailed descriptions, speakers, and registration links.</li>
+            <li>Includes hackathons, workshops, and networking meetups.</li>
+        </ul>
+        <a href="https://www.youtube.com/watch?v=2Vv-BfVoq4g" class="btn" target="_blank">Watch Video</a>
+    </div>
+
+</div>
+
+</body>
+</html>
