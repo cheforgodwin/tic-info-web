@@ -289,3 +289,108 @@ h1 {
     }
 
 }
+
+/* kk */
+
+/* MOBILE MENU */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+    .navigation-bar {
+        padding-inline: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .nav-btn.active {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-hamburger {
+        display: flex;
+    }
+    .biggest {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .features {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* kk */
+/* MOBILE MENU TOGGLE */
+.nav-links {
+    display: flex;
+    gap: 45px;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Default hidden state for mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        gap: 0;
+        max-height: 0;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Visible when active */
+    .nav-links.nav-active {
+        max-height: 500px; /* large enough to fit all links */
+        padding: 10px 0;
+    }
+}
+
+/* Hamburger animation */
+.nav-hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+.nav-hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-hamburger .bar {
+    transition: 0.4s;
+}
